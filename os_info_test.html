@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      //브라우저 객체 모델을 사용해 운영체제와 스크린 정보 얻기
+      var info = navigator.userAgent.toLowerCase(); //운영체제 정보를 구한다. 구한 정보를 소문자로 치환한다
+      var oslmg = null;
+
+      if (info.indexOf('windows')>=0){
+        oslmg = "windows.png";
+        document.write(oslmg);
+      } else if(info.indexOf('macintosh')>=0){
+        oslmg = "macintosh.png";
+        document.write(oslmg);
+      } else if(info.indexOf('iphone')>=0){
+        oslmg = "iphone.png";
+        document.write(oslmg);
+      } else if(info.indexOf('android')>=0){
+        oslmg = "android.png";
+        document.write(oslmg);
+      }
+
+      var scr = screen;
+      var sc_w = scr.width;
+      var sc_h = scr.height;
+
+      document.write("모니터 해상도 너비 : " + sc_w + "px" + "<br>");
+      document.write("모니터 해상도 너비 : " + sc_h + "px" + "<br>");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
