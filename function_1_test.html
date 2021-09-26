@@ -1,0 +1,14 @@
+<script>
+  var count = 0;
+  myFnc();
+  function myFnc(){ //일반 함수 정의
+    count++;
+    document.write("hello" + count + "<br>");
+  }
+  myFnc();
+  var theFnc = function(){ //익명 함수 정의
+    count++;
+    document.write("bye" + count + "<br>");
+  }
+  theFnc();
+</script>
