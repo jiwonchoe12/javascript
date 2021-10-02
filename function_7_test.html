@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      //재귀함수 호풀을 적용하여 1부터 10까지의 값을 출력하는 예제
+      var num = 0;
+      function testFnc() {
+        num++;
+        document.write(num, "<br>");
+        if (num == 10) return;
+
+        testFnc();
+      }
+      testFnc();
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
